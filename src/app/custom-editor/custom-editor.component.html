@@ -1,0 +1,13 @@
+Name: <input [ngClass]="inputClass"
+
+[name]="cell.getId()"
+(click)="onClick.emit($event)"
+(keyup)="updateValue()">
+<br>
+Url: <input [ngClass]="inputClass"
+
+[name]="cell.getId()"
+(click)="onClick.emit($event)"
+(keyup)="updateValue()"
+>
+<div [hidden]="true" [innerHTML]="cell.getValue()" #htmlValue></div>
